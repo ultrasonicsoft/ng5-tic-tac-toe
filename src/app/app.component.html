@@ -3,6 +3,9 @@
   <h1>
     Welcome to Tic-Tac-Toe
   </h1>
+  <h2>
+    <a href="https://www.linkedin.com/in/balram-chavan-957511116/">By - Balram Chavan</a>
+  </h2>
 </div>
 
 <div class="container">
@@ -28,12 +31,14 @@
 
   <br>
   <div class="row">
-    <h2 *ngIf="isGameStarted && !isGameOver">
-      <span class="label label-info"> Player {{isPlayerOneTurn? 'X':'O'}} Turn...</span>
-    </h2>
-    <h1 *ngIf="isGameOver">
-      <span class="label label-primary"> {{winnerMessage}} </span>
-    </h1>
+    <div class="col-md-10">
+      <h2 *ngIf="isGameStarted && !isGameOver">
+        <span class="label label-info"> Player {{isPlayerOneTurn? 'X':'O'}} Turn...</span>
+      </h2>
+      <h1 *ngIf="isGameOver">
+        <span class="label label-primary"> {{winnerMessage}} </span>
+      </h1>
+    </div>
   </div>
 
   <div>
